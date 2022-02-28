@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <meta charset = "UTF-8" />
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+        <title>Меня зовут Балабанов Алексей, я очень крутой</title>
+        <link rel = "stylesheet" href = "./styles.css">
+
+        <style>
+            .imgsize {
+                position: relative; 
+                width: 175px;
+                display: block;
+                margin: 5px;
+            }
+            .pic {
+                text-align: center; /* Выравнивания картинки по центру в html */ 
+            }
+            .em, .ex, .px, .percent { 
+     font-family: Verdana, Arial, sans-serif; 
+    }
+   .em { font-size: 2em; }
+   .ex { font-size: 2ex; } 
+   .px { font-size: 30px; } 
+   .percent { font-size: 200%; }
+        </style>
+        
     </head>
 
-    <body></body>
+    <body>
+        <h1 id = "center">Лабораторная выполнена <a href = "https://instagram.com/_alex_cookies?utm_medium=copy_l..">мной</a> с кайфом!</h1>
+        <img img class = "imgsize" src = "saske.jpg" alt = "Ты накакал мимо унитаза, переделывай">  
+        <div id="heart"></div>
+        <img img class = "imgsize" src = "naruto.jpg" alt = "Ты накакал мимо унитаза, переделывай"> 
+        <div id = "heart"></div>
+        <img img class = "imgsize" src = "kakashi.jpg" alt = "Ты накакал мимо унитаза, переделывай"> 
+        <img class = "center-pic" src="meme.jpg" alt = "img" width = "100" />
+        <table border = "2">
+            <tr>
+                <th>Крутая еда</th>
+                <th>Крутая вода</th>
+                <th>Смешные имена</th>
+            </tr>
+            <tr>
+                <td>Пельмени</td>
+                <td>Алоэ))</td>
+                <td>Глеб</td>
+            </tr>
+            <tr>
+                <td>Банан</td>
+                <td>Милкшейк</td>
+                <td>Олег</td>
+            </tr>
+        </table>
+        <form>
+            <input type="text" placeholder="Твоё имя">
+            <input type="search" placeholder="Крутой поисковик">
+            <input type="password" placeholder="Напиши паспортные данные, если любишь маму" size="50">
+            <select name="Кого больше любишь?"> <!--Supplement an id here instead of using 'name'-->
+                <option value="value1">Люблю Котиков</option>
+                <option value="value2" selected>Люблю Пиво</option>
+                <option value="value3">Люблю Собачек</option>
+              </select>
+          </form>
+        <text style="color:maroon;"><h2>Стихотворение от души</h2>
+            <small style="color:rgb(0,0,255);">Котёнку</small> <p class="em">нужно</p> <big style="color:#0000FF;">молока</big> - <p class="ex">Ведь</p> <p class="px">он</p> <small>малыш</small> ещё пока! <small>Малышки-лапки</small>, кнопка — <p class="percent">нос</p>, - Скорей бы крошка наш подрос. Пусть <sub>потихоньку</sub>, <sup>понемножку</sup>. И пусть вернётся мама кошка! </text>
+    </body>
 </html>
+
+
