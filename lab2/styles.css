@@ -16,7 +16,6 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    flex: wrap;
     margin-top: 3vh;
     align-items: baseline;
 }
@@ -171,7 +170,6 @@ h3{
     align-items: center;
     padding: 15px 36px;
 
-    position: static;
     width: 154px;
     height: 52px;
     left: 195px;
@@ -264,23 +262,24 @@ h3{
 }
 
 .main1{
-    height: 721px;
+    height: auto;
 }
 
 .block2{
     margin-left: 14vw;
     margin-top: 10vh;
     margin-right: 14vw;
-
 }
 
 .el{
-    width: 23vw;
+    width: 332px;
     height: 19vh;
 
     border: 1px solid #F2F2F2;
     box-sizing: border-box;
     display: inline-block;
+
+    margin: 10px;
 }
 
 h5{
@@ -329,8 +328,13 @@ h5{
     display: flex;
     justify-content: space-between;
     margin-bottom: 4vh;
-}
 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.imgsize10{
+    display: none;
+}
 .text21{
     font-family: Montserrat;
     font-size: 40px;
@@ -338,7 +342,8 @@ h5{
     font-weight: 700;
     line-height: 57px;
     letter-spacing: 0.20000000298023224px;
-    text-align: center
+    text-align: center;
+    justify-content: center;
 }
 
 .text22{
@@ -352,6 +357,8 @@ h5{
 
     display: flex;
     max-width: 33vw;
+
+    justify-content: center;
 }
 .body2{
     display: flex;
@@ -359,6 +366,8 @@ h5{
     align-content: space-between;
     align-items: center;
     flex-direction: column;
+
+    margin-top: 15vh;
 }
 
 .main2{
@@ -368,6 +377,8 @@ h5{
     width: 52vw;
     background-color: #FFFFFF;
     height: 47vh;
+
+    margin-top: 11vh;
 }
 
 .text23{
@@ -433,6 +444,15 @@ h5{
     letter-spacing: 0.20000000298023224px;
     text-align: center;
 }
+.text51{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
 
 .text32{
     font-family: Montserrat;
@@ -444,6 +464,7 @@ h5{
     text-align: center;
 
     max-width: 33vw;
+    margin-top: 30px;
 }
 
 .knopka31{
@@ -543,10 +564,10 @@ h5{
 }
 
 .block41{
-    width: 35vw;
+    width: 502px;
     height: 32vh;
     background-color: #FFFFFF;
-    margin-right: 2vw;
+    margin: 10px;
 
     border: 1px solid #23A6F0;
     box-sizing: border-box;
@@ -556,6 +577,8 @@ h5{
 .raw42{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .column41{
@@ -624,8 +647,8 @@ h5{
     padding: 15px 40px;
 
     position: static;
-    width: 11vw;
-    height: 7vh;
+    width: 162px;
+    height: 52px;
     left: 0px;
     top: 82px;
 
@@ -695,7 +718,7 @@ h5{
 }
 
 .text231{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -718,4 +741,230 @@ h5{
     margin-top: 15vh;
     margin-left: 6vw;
     margin-right: 6vw;
+}
+.imgsize9{
+    display: none;
+}
+.imgsize55{
+    display: none;
+}
+.imgsize77{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .imgsize6{
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+    }
+    .body51{
+        flex-direction: column;
+    }
+    .imgsize7{
+        display: none;
+    }
+    .imgsize77{
+        display: inline;
+        width: 414px;
+        height: 954px;
+    }
+    .main5{
+        height: 1604px;
+    }
+    .main6{height: 904px;}
+    .body6 {
+        display: flex;
+        flex-direction: column;
+    }
+    .block6{
+        margin-left: 20vw;
+    }
+}
+@media screen and (max-width: 850px){
+    .head{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main{
+        justify-content: center;
+    }
+
+    .main_item1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .Brand{
+        margin-left: 0%;
+    }
+    .main_item{
+        margin-left: 45%;
+    }
+    .main_item2{
+        margin-left: 45%;
+    }
+    .knopka{
+        display: none;
+    }
+    .imgsize9{
+        display: flex;
+        margin-right: 5vw;
+    }
+    .pici{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10%;
+    }
+    .Microhead{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .link_main{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 45px;
+        /* identical to box height, or 150% */
+
+        text-align: center;
+        letter-spacing: 0.2px;
+
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+    .Telefon{
+        position: relative;
+        margin-left: 20%;
+    }
+    .main{
+        height: 2000px;
+    }
+
+    .SomeText{
+        font-family: Montserrat;
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 80px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        max-width: 35vw;
+
+        padding-top: 24vh;
+        margin-bottom: 30px;
+    }
+    .SomeText1{
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        max-width: 280px;
+    }
+    .groop2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+    }
+    .groop228{
+        display: flex;
+        justify-content: center;
+        margin-top: 4vh;
+    }
+    .text2{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+
+        text-align: center;
+        letter-spacing: 0.2px;
+        max-width: 200px;
+        /* light-text-color */
+
+        color: #FFFFFF;
+        margin-top: 10px;
+    }
+    .imgsize10{
+        display: block;
+        position: absolute;
+        margin-top: 36px;
+        margin-left: 20px;
+    }
+    .imgsize2{
+        display: none;
+    }
+    .el{
+        border: 0;
+    }
+    .text22{
+        max-width: 340px;
+    }
+    .text31{
+        max-width: 228px;
+    }
+    .main3{
+        height: 1000px;
+    }
+    .raw32{
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6vh;
+    }
+    .table{
+        margin-top: 20px;
+    }
+    .knopka31{
+        background: #FFFFFF;
+        border: 1.90776px solid #FFFFFF;
+    }
+    .Bat31{
+        color: #252B42;
+    }
+    .Bat32{
+        color: #252B42;
+    }
+    .imgsize5{
+        display: none;
+    }
+    .imgsize55{
+        display: inline;
+    }
+    .text32{
+        max-width: 262px;
+        margin-bottom: 60px;
+    }
+    .block41{
+        height: 402px;
+    }
+    .table41{
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .main4{
+        height: 1304px;
+    }
+    .body53{
+        margin-top: 90vh;
+    }
+
+
+}
+@media screen and (max-width: 500px){
+    .Telefon{
+        display: none;
+    }
 }
