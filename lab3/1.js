@@ -10,7 +10,7 @@ function capitalize(str) {
         if (str[i]==" "){
             str = str.substr(0, i) + " " + str[i+1].toUpperCase() + str.substr(i + 2);
         }
-        if(i==0){
+        if(i == 0){
             str = str[i].toUpperCase()+str.substr(i+1);
         }
     }
