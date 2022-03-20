@@ -11,7 +11,27 @@
  */
 
 function checkBrackets(str) {
-    //code here
+    let open = ['[', '(', '<'];
+    let close = [']', ')', '>'];
+    let tester = str.split("");
+    let openMassive = [];
+    let stack;
+        for(let i in tester){
+            if (open.indexOf(tester[i]) !== -1 ){
+                openMassive.push(stack);
+                stack = open.indexOf(tester[i]);
+            } else {
+                if (stack === close.indexOf(tester[i])){
+                    stack = openMassive.pop();
+                } else {
+                    return false;
+                }
+            }
+
+        }
+    if (openMassive.length !== 0) return false;
+    else  return true;
+
 }
 
 module.exports = checkBrackets;

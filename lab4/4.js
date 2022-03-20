@@ -17,7 +17,17 @@
 */
 
 function get1DArray(arr) {
-    //code here
+    let stack = [...arr];
+    let res = [];
+    while (stack.length) {
+      let lastEl = stack.pop();
+      if (Array.isArray(lastEl)) {
+        stack.push(...lastEl);
+      } else {
+        res.push(lastEl);
+      }
+    }
+    return res.reverse();
 }
 
 module.exports = get1DArray;
