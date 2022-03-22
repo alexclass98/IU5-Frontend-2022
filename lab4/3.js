@@ -8,7 +8,21 @@
  */
 
 function rle(str) {
-    //code here
+    let res = [];
+    let tester = str.split("");
+    k=1;
+    for(i = 0; i < str.length; i++){
+        if(tester[i] == tester[i+1]){
+            k++;
+        } else {
+            res.push(tester[i]);
+            if(k > 1){
+                res.push(k);
+            }
+            k=1;
+        }
+    }
+    return res.join("");
 }
 
 module.exports = rle;
