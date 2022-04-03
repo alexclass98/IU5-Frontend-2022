@@ -59,6 +59,21 @@ el1.addEventListener('mousemove', e => {
 
 
 
+const serial = document.getElementById("serial")
+const last = document.getElementById("hid")
+let res=[];
+serial.addEventListener("click", ()=>{
+    let taken = fetch("https://breakingbadapi.com/api/episodes")
+    .then((response)=>{
+        return response.json();
+    })
+    .then((data) => {
+        for (const e of data) {
+            res = `<h4 class='new'><div>${e.episode_id}</div><div>${e.title}</div><div>${e.series}</div><div>${e.air_date}</div></h4>`
+            last.insertAdjacentHTML('beforeend', res)
+        }
+    });
+});
 
 
 
