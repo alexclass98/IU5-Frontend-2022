@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 const button = document.getElementById("kvadrat");
 
 const handleButtonClick = (e) => {
@@ -61,23 +59,6 @@ el1.addEventListener('mousemove', e => {
 
 
 
-const serial = document.getElementById("serial")
-const last = document.getElementById("hid")
-let res=[];
-serial.addEventListener("click", ()=>{
-    let taken = fetch("https://breakingbadapi.com/api/episodes")
-    .then((response)=>{
-        return response.json();
-    })
-    .then((data) => {
-        for (let i of data) {
-            res.push(i.series);
-        }
-})
-res.forEach((e) => {
-    last.innerHTML += `<h1>${e}</h1>`;
-});
-});
 
 
 
