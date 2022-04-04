@@ -9,3 +9,5 @@
  Array.prototype.myMap = function myMap(x) {
     return this.reduce((accum, current) => accum.concat(x(current)), []);
   };
+
+

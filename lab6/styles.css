@@ -1,0 +1,106 @@
+.spisok-hide::-webkit-scrollbar {
+    width: 12px;               /* ширина scrollbar */
+  }
+.spisok-hide::-webkit-scrollbar-track {
+    background: orange;        /* цвет дорожки */
+  }
+.spisok-hide::-webkit-scrollbar-thumb {
+    background-color: blue;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 3px solid orange;  /* padding вокруг плашки */
+  }
+body{
+    background-color: aquamarine;
+}
+.chill{
+    display: flex;
+    justify-content: center;
+}
+.kvadrat{
+    margin-left: 47%;
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+
+}
+
+.Text1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.kvadrat2{
+    margin-left: 47%;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: rgb(43, 226, 98);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+.cool1{
+    background-color: bisque;
+    border-radius: 12px;
+    width: 194px;
+}
+.cool1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.spisok-hide{
+    display: none;
+    padding: 2px;
+}
+
+.spisok-flex{
+    height: 160px;
+    width: 178px;
+    display: block;
+    text-align: center;
+    background-color: bisque;
+    overflow-y: scroll;
+}
+
+.t3{
+    margin-left: 45%;
+}
+
+.kvadrat4{
+    margin-left: auto ;
+    margin-right:auto ;
+    width: 800px;
+    height: 800px;
+    border: rgb(40, 2, 82) solid 5px;
+    position: relative;
+    padding: 5px;
+
+    background-color: brown;
+}
+.d1{
+    position: absolute;
+    z-index: 999;
+    width: 30px;
+    height: 30px;
+    background: #83A7C9;
+    border-radius: 50%;
+}
+
+.serial{
+    background-color: bisque;
+    border-radius: 12px;
+    margin-left: 47%;
+    margin-top: 30px;
+    text-align: center;
+}
+.new{
+    width: 800px;
+    display: flex;
+    margin-left: 22%;
+    justify-content: space-between;
+}
+

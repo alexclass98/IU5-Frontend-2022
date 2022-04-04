@@ -20,6 +20,7 @@ function memoize(func) {
         cache = func(...a);
         return {'cache': res ,'result': cache};
     }
+
 }
 
 module.exports = memoize;
