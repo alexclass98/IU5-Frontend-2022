@@ -13,6 +13,7 @@
  * console.log(curry(add)(1, 2, 3)); //6
  */
 function curry(f) {
+
     var slice = [].slice;
     var length = f.length;
     return function curriedFn() {
@@ -25,6 +26,7 @@ function curry(f) {
 
       return f.apply(null, args);
     };
+
 
 }
 
