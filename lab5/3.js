@@ -5,6 +5,7 @@
  * Примеры:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * customBind(function() {this.a + this.b}, {a: 1, b2: 2})() -> 3
  */
 
