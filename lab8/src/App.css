@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.App {
+height: 730px;
+  text-align: center;
+  background-color: aqua;
+}
+.head {
+    background-color: burlywood;
+    height: 100px;
+}
+
+.ToDoForm{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 50px;
+    margin-bottom: 20px;
+}
+.input{
+    text-align: center;
+    margin: 0 50px;
+    height: 30px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.but{
+    margin: 0 50px;
+    background-color: blanchedalmond;
+    border-radius: 12px;
+    width: 100px;
+}
+.but:hover{
+    background-color: brown;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+}
+.item-todo{
+    height: 30px;
+    width: 300px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: bisque;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+
+.item-delete{
+    margin-right: 20px;
+}
+
+.item-text{
+    margin-left: 20px;
+}
+.chertila {
+    text-decoration: line-through;
+}
+
+
+
+@media screen and (max-width: 976px) {
+    .head{
+        height: 150px;
+    }
+
+}
+@media screen and (max-width: 550px) {
+    .head{
+        height: 170px;
+    }
+
+}
+@media screen and (max-width: 405px) {
+    .head{
+        height: 200px;
+    }
+
+}
+@media screen and (max-width: 368px) {
+    .ToDoForm{
+        display: block;
+    }
+    .but{
+        margin: 0 0;
+        justify-content: center;
+    }
+    .input{
+        margin: 0 0;
+        justify-content: center;
+        width: 200px;
+    }
+
+}
+@media screen and (max-width: 319px) {
+    .head{
+        height: 250px;
+    }
+
+}
+
+
