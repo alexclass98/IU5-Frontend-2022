@@ -1,0 +1,96 @@
+input {
+	width: 300px;
+	font-size: 13px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);;
+}
+.App {
+    text-align: center;
+    background-color: burlywood;
+    height: 748px;
+}
+
+.head {
+    text-align: center;
+    background-color: coral;
+    height: 100px;
+}
+.text1{
+    padding-top: 30px;
+}
+
+.pic1{
+    padding-top: 50px;
+    height: 200px;
+    width: auto;
+    padding-bottom: 20px;
+}
+
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.someText{
+    text-align: left;
+}
+.usersPic{
+    padding-top: 50px;
+    height: 200px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.users{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.block1{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 600px;	height: 250px; /* Размеры */
+    background: brown; /* Цвет фона */
+    outline: 2px solid #000; /* Чёрная рамка */
+    border: 3px solid #fff; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+}
+
+
+@media screen and (max-width: 600px) {
+    .head{
+        height: 200px;
+    }
+    .App{
+        height: 1000px;
+    }
+    .pic1{
+        height: 150px;
+    }
+    .block1{
+        width: 350px;
+        flex-direction: column;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+input{
+    width: 150px;
+}
+.block1{
+    width: 200px;
+}
+}
+@media screen and (max-width: 256px) {
+    .head{
+        height: 250px;
+    }
+    }
