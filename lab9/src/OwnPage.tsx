@@ -7,11 +7,16 @@ export const OwnPage: React.FC<UserProps> = () => {
     const changer = (event: React.MouseEvent) => {
         User.count = 4;
     }
-
+    interface LocationState {
+        data: {
+          userName: string;
+        };
+      }
     const [search, setSearch] = useState(false);
-    const location = useLocation();
+    const location = useLocation() ;
+    const { data } = location.state as LocationState;
     console.log(location, " useLocation Hook");
-    const userName = location.state.data.userName;
+    const userName = data.userName ;
     console.log(userName, " Кто там");
     const User1: UserProps = {
         name: "",
