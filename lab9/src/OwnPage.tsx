@@ -43,6 +43,7 @@ export const OwnPage: React.FC<UserProps> = () => {
                 console.log(User.name);
 
             })
+            // eslint-disable-next-line
             },[search]);
     return (
         <div className="card1" >

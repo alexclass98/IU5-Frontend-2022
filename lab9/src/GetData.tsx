@@ -67,6 +67,7 @@ export const GetData: React.FC<UserProps> = () => {
                 setLoader(false);
 
             })
+            // eslint-disable-next-line
             },[userName]);
 
     return (
