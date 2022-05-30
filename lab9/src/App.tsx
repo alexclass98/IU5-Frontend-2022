@@ -12,8 +12,8 @@ export const App = () => {
                  <h2 className="text1">Данная страница поможет тебе найти пользователя github по его логину!</h2>
              </header>
             <Routes>
-                <Route path={process.env.REACT_APP_DEV === "true" ? "/" : "/lab9/build"} element={<GetData/>}></Route>
-                <Route path={process.env.REACT_APP_DEV === "true" ? "/cool" : "/lab9/build"} element={<OwnPage/>}></Route>
+                <Route path={process.env.REACT_APP_DEV === "true" ? "/" : "/lab10/build"} element={<GetData/>}></Route>
+                <Route path={process.env.REACT_APP_DEV === "true" ? "/cool" : "/lab10/build"} element={<OwnPage/>}></Route>
             </Routes>
         </div>
     );
