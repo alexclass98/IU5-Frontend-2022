@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {UserProps} from "./GetDataTypes"
 import "./App.css";
+import {Link } from 'react-router-dom';
 
 export const GetData: React.FC<UserProps> = () => {
     const [userName, setUserName] = useState("");
@@ -12,7 +13,7 @@ export const GetData: React.FC<UserProps> = () => {
         following: 0,
         avatar: ""
       }
-    const [User, setUser] = useState(User1);
+    const [User] = useState(User1);
 
 
 
@@ -77,15 +78,7 @@ export const GetData: React.FC<UserProps> = () => {
             onKeyPress = {KeyPressHandler}
             placeholder="Введите имя пользователя"/>
             {User.name!=="" &&User.name!==undefined ?(
-                <div className="block1">
-            <img className='usersPic' src={User.avatar} alt=''/>
-            <div className="users">
-                <div className="someText"><h4>Nickname: {User.name}</h4></div>
-                <div className="someText"><h4>Followers: {User.followers}</h4></div>
-                <div className="someText"><h4>Following: {User.following}</h4></div>
-            </div>
-            </div>
-            ):
+                 <Link to={'/cool'} state={{ data: {userName} }} >Your user</Link> ):
             (<div className="someText2"><h4>Данного пользователя не существует!</h4></div>)}
         </div>
     )
