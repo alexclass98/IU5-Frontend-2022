@@ -4,9 +4,7 @@ import "./App.css";
 import {Link, useLocation } from 'react-router-dom';
 
 export const OwnPage: React.FC<UserProps> = () => {
-    const changer = (event: React.MouseEvent) => {
-        User.count = 4;
-    }
+    
     interface LocationState {
         data: {
           userName: string;
