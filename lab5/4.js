@@ -14,6 +14,7 @@
  */
 
 function memoize(func) {
+<<<<<<< HEAD
     let cache;
     return (...a) => {
         const res = (cache === func(...a));
@@ -21,6 +22,9 @@ function memoize(func) {
         return {'cache': res ,'result': cache};
     }
 
+=======
+    //code here
+>>>>>>> cbfa7221cfe8a75e48f61b4ddac4986809b481bf
 }
 
 module.exports = memoize;

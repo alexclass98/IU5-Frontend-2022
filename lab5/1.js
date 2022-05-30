@@ -6,9 +6,12 @@
  * [1,2,3].myMap((x) => x*2) -> [2,4,6]
  * Нужно назвать myMap !!!!!
  */
+<<<<<<< HEAD
  Array.prototype.myMap = function myMap(x) {
     return this.reduce((accum, current) => accum.concat(x(current)), []);
   };
 
 
 
+=======
+>>>>>>> cbfa7221cfe8a75e48f61b4ddac4986809b481bf

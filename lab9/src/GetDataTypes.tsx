@@ -3,4 +3,5 @@ export type UserProps = {
     followers?: number | null,
     following?: number | null,
     avatar?: string
+    count?: number | null,
 }

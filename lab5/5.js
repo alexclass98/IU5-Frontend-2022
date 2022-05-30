@@ -22,6 +22,7 @@
  */
 
 function makeRoute(arr) {
+<<<<<<< HEAD
     const res = [];
 
     arr.forEach(element => {
@@ -49,6 +50,9 @@ function makeRoute(arr) {
     return res;
 
 
+=======
+    //code here
+>>>>>>> cbfa7221cfe8a75e48f61b4ddac4986809b481bf
 }
 
 module.exports = makeRoute;

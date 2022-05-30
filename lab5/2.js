@@ -13,6 +13,7 @@
  * console.log(curry(add)(1, 2, 3)); //6
  */
 function curry(f) {
+<<<<<<< HEAD
 
     var slice = [].slice;
     var length = f.length;
@@ -28,6 +29,9 @@ function curry(f) {
     };
 
 
+=======
+    //code here
+>>>>>>> cbfa7221cfe8a75e48f61b4ddac4986809b481bf
 }
 
 module.exports = curry;
