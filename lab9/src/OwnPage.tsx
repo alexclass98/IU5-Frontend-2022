@@ -60,7 +60,7 @@ export const OwnPage: React.FC<UserProps> = () => {
             <div className="someText"><h4>Вы уверены, что хотите получить данные об {userName}</h4></div>
             <button className='but1' onClick={() => setSearch(!search)}><h5>Да</h5></button>
             </div>)}
-            <Link to='/'>Back</Link>
+            <Link to='/lab9/build'>Back</Link>
         </div>
     )
 
